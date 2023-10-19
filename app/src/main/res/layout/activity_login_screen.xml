@@ -25,7 +25,7 @@
 
     <EditText
         android:layout_marginTop="16dp"
-        android:id="@+id/et_email"
+        android:id="@+id/upload_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Email"
@@ -34,7 +34,7 @@
 
     <EditText
         android:layout_marginTop="16dp"
-        android:id="@+id/et_password"
+        android:id="@+id/upload_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"

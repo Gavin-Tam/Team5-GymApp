@@ -18,8 +18,8 @@ import com.google.firebase.ktx.Firebase
 class LoginScreenActivity : AppCompatActivity() {
     private lateinit var linkSignup: TextView
     private lateinit var auth: FirebaseAuth
-    private lateinit var etEmail: EditText
-    private lateinit var etPassword: EditText
+    private lateinit var upEmail: EditText
+    private lateinit var upPassword: EditText
     private lateinit var btnLogin: Button
     private val TAG = "Firebase_Auth_Login"
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,8 +28,8 @@ class LoginScreenActivity : AppCompatActivity() {
         auth = Firebase.auth
         Log.d(TAG, "IS THERE A USER? " + auth.currentUser)
 
-        etEmail = findViewById(R.id.et_email)
-        etPassword = findViewById(R.id.et_password)
+        upEmail = findViewById(R.id.upload_email)
+        upPassword = findViewById(R.id.upload_password)
         btnLogin = findViewById(R.id.btn_login)
         linkSignup = findViewById(R.id.linksignup)
 
@@ -44,15 +44,15 @@ class LoginScreenActivity : AppCompatActivity() {
     }
 
     private fun attemptLogin() {
-        val email = etEmail.text.toString()
-        val password = etPassword.text.toString()
+        val email = upEmail.text.toString()
+        val password = upPassword.text.toString()
 
         if (TextUtils.isEmpty(email)) {
-            etEmail.error = "Email cannot be empty"
-            etEmail.requestFocus()
+            upEmail.error = "Email cannot be empty"
+            upEmail.requestFocus()
         } else if (TextUtils.isEmpty(password)) {
-            etPassword.error = "Password cannot be empty"
-            etPassword.requestFocus()
+            upPassword.error = "Password cannot be empty"
+            upPassword.requestFocus()
         } else {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
