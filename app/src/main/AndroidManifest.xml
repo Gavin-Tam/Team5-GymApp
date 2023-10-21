@@ -14,9 +14,7 @@
         <activity
             android:name=".UserProfileActivity"
             android:exported="false" />
-        <activity
-            android:name=".TrainersHomeScreenActivity"
-            android:exported="false" />
+
         <activity
             android:name=".HomeScreenActivity"
             android:exported="false" />
