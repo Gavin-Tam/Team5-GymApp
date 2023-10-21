@@ -50,10 +50,10 @@ class SignupScreenActivity : AppCompatActivity() {
         btnSignUp = findViewById(R.id.btn_signup)
         linkLogin = findViewById(R.id.linklogin)
         isTrainer = findViewById(R.id.uplaodchk_trainer)
-
         genderRadioGroup = findViewById(R.id.gender_radio)
         maleRadioButton = findViewById(R.id.uploadradio_male)
         femaleRadioButton = findViewById(R.id.uploadradio_female)
+
         btnSignUp.setOnClickListener {
             createUser()
         }
