@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Gym"
         tools:targetApi="31">
         <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".TrainersHomeScreenActivity"
             android:exported="false" />
         <activity
