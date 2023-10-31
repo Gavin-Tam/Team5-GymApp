@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
-        android:background="@color/white"
+      android:background="@drawable/edittextdrawable"
         android:inputType="text"/>
 
     <EditText
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:background="@color/white"
+        android:background="@drawable/edittextdrawable"
         android:inputType="textEmailAddress"/>
 
     <EditText
@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:background="@color/white"
+        android:background="@drawable/edittextdrawable"
         android:inputType="textPassword"/>
 
     <EditText
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
-        android:background="@color/white"
+       android:background="@drawable/edittextdrawable"
         android:inputType="textPassword"/>
     <EditText
         android:layout_marginTop="15dp"
@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Age"
-        android:background="@color/white"
+ android:background="@drawable/edittextdrawable"
         android:inputType="number"/>
 
     <EditText
@@ -72,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Height (in feet)"
-        android:background="@color/white"
+       android:background="@drawable/edittextdrawable"
         android:inputType="numberDecimal"/>
 
     <EditText
@@ -81,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Weight (in LB)"
-        android:background="@color/white"
+       android:background="@drawable/edittextdrawable"
         android:inputType="numberDecimal"/>
 
     <RadioGroup
