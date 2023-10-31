@@ -30,7 +30,6 @@
         android:layout_height="wrap_content"
         android:hint="Enter Email"
        android:background="@drawable/edittextdrawable"
-
         android:inputType="textEmailAddress"/>
 
     <EditText
