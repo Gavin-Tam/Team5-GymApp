@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".UserProfileActivity">
+    android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewUsername"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter username"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:layout_below="@+id/textViewUsername"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edittextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textEmailAddress"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/editTextUsername"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Age -->
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:layout_below="@+id/textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewAge"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/edittextEmailAddress"
+        android:hint="Enter age"
+        android:inputType="number" />
+
+    <!-- Height -->
+    <TextView
+        android:id="@+id/textViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height (cm):"
+        android:layout_below="@+id/textViewAge"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewHeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/editTextAge"
+        android:hint="Enter height"
+        android:inputType="numberDecimal" />
+
+    <!-- Weight -->
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight (kg):"
+        android:layout_below="@+id/textViewHeight"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewWeight"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/editTextHeight"
+        android:hint="Enter weight"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="Save Changes" />
+</RelativeLayout>
