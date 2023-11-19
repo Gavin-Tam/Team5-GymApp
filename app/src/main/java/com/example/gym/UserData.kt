@@ -9,7 +9,8 @@ data class UserData(
     val height: Double? = null,
     val weight: Int? = null,
     val gender: Gender? = null,
-    val trainer: Boolean = false
+    val trainer: Boolean = false,
+    val message: String? = null,
 )
 enum class Gender {
     MALE, FEMALE
