@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class CustomerSupportActivity : AppCompatActivity() {
 
@@ -22,6 +23,8 @@ class CustomerSupportActivity : AppCompatActivity() {
         editTextEmail = findViewById(R.id.editTextEmail)
         editTextMessage = findViewById(R.id.editTextMessage)
         buttonSubmit = findViewById(R.id.buttonSubmit)
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("customer_support_entries")
 
         buttonSubmit.setOnClickListener {
             val name = editTextName.text.toString()
