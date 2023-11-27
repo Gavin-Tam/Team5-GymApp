@@ -11,6 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textColor="@color/white"
-        android:text="You Have reached the reguakr user page"/>
+        android:text="You Have reached the regular user page"/>
 
 </LinearLayout>
