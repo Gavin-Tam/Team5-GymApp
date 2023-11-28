@@ -31,7 +31,7 @@ public class UserProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile);
+        setContentView(R.layout.profile_fragment);
 
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextEmail = findViewById(R.id.edittextEmailAddress);

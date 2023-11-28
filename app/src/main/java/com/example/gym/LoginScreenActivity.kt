@@ -65,6 +65,7 @@ class LoginScreenActivity : AppCompatActivity() {
                         }
                         val intent =
                             Intent(this@LoginScreenActivity, HomeScreenActivity::class.java)
+                        intent.putExtra("user_name", user?.displayName)
                         startActivity(intent)
                     } else {
                         // If sign in fails, display a message to the user.
